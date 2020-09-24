@@ -1,0 +1,39 @@
+.footer{
+    background-color: black;
+    position: relative;
+    .container{
+        margin: 20px;
+        padding:20px;
+        text-align: center;
+        ul{
+            margin-top: 20px;
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            flex-wrap: wrap;
+            li{
+                padding: 5px;
+                margin: 10px;
+                a{
+                    color: blanchedalmond;
+                    font-size: 1.25em;
+                    text-decoration: none;
+                }
+                &:hover{
+                    border-radius: 30px;
+                    padding: 5px;
+                    background-color: orangered;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+        p{
+            margin: 10px;
+            padding: 10px;
+            color: white;
+        }
+    }
+}
+        

@@ -1,0 +1,364 @@
+.header {
+  position: relative;
+}
+
+.header .container {
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  background-color: black;
+}
+
+.header .container img {
+  height: auto;
+  width: 25%;
+}
+
+.header .container h1 {
+  color: white;
+  font-size: 2em;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  background-image: url(../img/banner.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.banner .container {
+  position: relative;
+}
+
+.banner .container h1 {
+  margin: 0px;
+  max-width: 65%;
+  height: auto;
+  position: relative;
+  top: 8em;
+  left: 10%;
+}
+
+.banner .container .now {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 40px;
+  top: 19em;
+  left: 22%;
+  max-width: 50%;
+  height: auto;
+}
+
+.banner .container .now a {
+  max-width: 50%;
+  height: auto;
+  color: khaki;
+  font-size: 1.5em;
+}
+
+.products {
+  position: relative;
+}
+
+.products .container {
+  position: relative;
+  margin: 20px;
+  padding: 10px;
+}
+
+.products .container .heading {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.products .container .heading h2 {
+  color: orangered;
+  font-size: 2em;
+}
+
+.products .container .list {
+  margin: 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.products .container .list .item {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+}
+
+.products .container .list .item .imgs img {
+  max-width: 15em;
+  width: 100%;
+  height: auto;
+}
+
+.products .container .list .item .content {
+  margin: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+.products .container .list .item .content .rate {
+  line-height: 1.75;
+  color: goldenrod;
+}
+
+.products .container .list .item .content .rate span {
+  font-size: 1em;
+  font-size: bolder;
+}
+
+.products .container .list .item .content .rate a {
+  color: orangered;
+  font-weight: bolder;
+  font-size: 1.3em;
+}
+
+.products .container .list .item .content .adde {
+  visibility: hidden;
+  top: 26%;
+  left: 30%;
+  position: absolute;
+  margin: 10px;
+  padding: 5px;
+}
+
+.products .container .list .item:hover .imgs {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.products .container .list .item:hover .content .adde {
+  visibility: visible;
+}
+
+.products .container .list .item:hover .content .adde i {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: wheat;
+  border: 1px solid gray;
+  border-radius: 50%;
+  font-size: 2em;
+  color: orangered;
+  padding: 10px;
+}
+
+.footer {
+  background-color: black;
+  position: relative;
+}
+
+.footer .container {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .container ul {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .container ul li {
+  padding: 5px;
+  margin: 10px;
+}
+
+.footer .container ul li a {
+  color: blanchedalmond;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+.footer .container ul li:hover {
+  border-radius: 30px;
+  padding: 5px;
+  background-color: orangered;
+}
+
+.footer .container ul li:hover a {
+  color: white;
+}
+
+.footer .container p {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.cart {
+  margin-top: 20px;
+  display: none;
+  bottom: 5%;
+  position: fixed;
+  right: 3%;
+  z-index: 100;
+  width: 0;
+  max-height: 700px;
+  overflow-y: overlay;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.cart #clo {
+  position: absolute;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.cart #clo:hover {
+  background-color: gray;
+}
+
+.cart h4, .cart h5 {
+  bottom: 0px;
+  position: relative;
+  color: black;
+  font-weight: bolder;
+  font-size: 1em;
+  text-align: center;
+  padding: 5px;
+}
+
+.cart div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.cart div div {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+}
+
+.cart div div img {
+  max-width: 5em;
+  width: 100%;
+  height: auto;
+  line-height: 1.5;
+}
+
+.cart div div h3 {
+  margin: 0px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: orangered;
+}
+
+.cart div div span {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.75em;
+  padding: 20px;
+  color: black;
+}
+
+.cart div div h6 {
+  font-size: 1em;
+  margin: 0px;
+  padding-top: 10px;
+  color: orangered;
+}
+
+.cart div div h6:hover {
+  -webkit-text-decoration: underline gray;
+          text-decoration: underline gray;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+}
+
+.cart div div button {
+  margin-bottom: 7px;
+  color: orangered;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1.5em;
+}
+
+.cart div div button:hover {
+  background-color: orangered;
+  color: white;
+}
+
+.shop {
+  z-index: 99;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 5px;
+  background-color: black;
+}
+
+.shop span {
+  font-size: 0.8em;
+  position: absolute;
+  top: -20px;
+  right: -18px;
+  padding: 7px 10px;
+  font-weight: bolder;
+  color: white;
+  background-color: orangered;
+  border-radius: 50%;
+}
+
+.shop a i {
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

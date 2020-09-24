@@ -1,0 +1,86 @@
+.cart{
+    margin-top: 20px;
+    display: none;
+    bottom: 5%;
+    position: fixed;
+    right: 3%;
+    z-index: 100;
+    width: 0;
+    max-height: 700px;
+    overflow-y: overlay;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    #clo{
+        position: absolute;
+        font-size: 1.5em;
+        text-decoration: none;
+        padding: 15px;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    h4 , h5{
+        bottom: 0px;
+        position: relative;
+        color: black;
+        font-weight: bolder;
+        font-size: 1em;
+        text-align: center;
+        padding: 5px;
+    }
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        div{
+            height: max-content;
+            display: block;
+            width: max-content;
+            text-align: center;
+            img{
+                max-width: 5em;
+                width: 100%;
+                height: auto;
+                line-height: 1.5;
+            }
+            h3{
+                margin: 0px;
+                padding-bottom:10px ;
+                font-weight: bold;
+                color: orangered;
+            }
+            span{
+                font-style: italic;
+                font-weight: bold;
+                font-size: 0.75em;
+                padding: 20px;
+                color: black;
+            }
+            h6{
+                font-size: 1em;
+                margin: 0px;
+                padding-top: 10px;
+                color: orangered;
+                &:hover{
+                    text-decoration: underline gray;
+                    transition: ease-out 1s;
+                }
+            }
+            button{
+                margin-bottom: 7px;
+                color: orangered;
+                background-color: transparent;
+                border-color: transparent;
+                font-size: 1.5em;
+                &:hover{
+                    background-color: orangered;
+                    color: white;
+                }
+            }
+        }
+    }
+}

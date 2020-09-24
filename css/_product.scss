@@ -1,0 +1,80 @@
+.products{
+    position: relative;
+    .container{
+        position: relative;
+        margin: 20px;
+        padding: 10px;
+        .heading{
+            width: max-content;
+            margin: auto;
+            h2{
+                color: orangered;
+                font-size: 2em;
+            }
+        }
+        .list{
+            margin: 20px;
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .item{
+                position: relative;
+                margin: 20px;
+                padding: 20px;
+                .imgs{
+                    img{
+                        max-width: 15em;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .content{
+                    margin: 10px;
+                    text-align: center;
+                    margin: 10px;
+                    .rate{
+                        line-height: 1.75;
+                        color: goldenrod;
+                        span{
+                            font-size: 1em;
+                            font-size: bolder;
+                        }
+                        a{
+                            color: orangered;
+                            font-weight: bolder;
+                            font-size: 1.3em;
+                        }
+                    }
+                    .adde{
+                        visibility: hidden;
+                        top: 26%;
+                        left: 30%;
+                        position: absolute;
+                        margin: 10px;
+                        padding:5px;
+                    }
+                }
+                &:hover{
+                    .imgs{
+                        filter: blur(2px);
+                    }
+                    .content{
+                        .adde{
+                            visibility: visible;
+                            i{
+                                transition:0.5s ease-in-out;
+                                background-color: wheat;
+                                border: 1px solid gray;
+                                border-radius: 50%;
+                                font-size: 2em;
+                                color: orangered;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

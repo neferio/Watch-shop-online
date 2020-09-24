@@ -1,0 +1,37 @@
+.banner{
+    width: 100%;
+    position: relative;
+    background-image: url(../img/banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center ;
+    height: 550px;
+    .container{
+        position: relative;
+        h1{
+            margin: 0px;
+            max-width: 65%;
+            height: auto;
+            position: relative;
+            top: 8em;
+            left: 10%;
+        }
+        .now{
+            position: relative;
+            width: fit-content;
+            padding: 10px;
+            background-color: gray;
+            border-radius: 40px;
+            top: 19em;
+            left: 22%;
+            max-width: 50%;
+            height: auto;
+            a{
+                max-width: 50%;
+                height: auto;
+                color: khaki;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
